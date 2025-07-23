@@ -1,11 +1,11 @@
 const { Client, GatewayIntentBits, ContextMenuCommandAssertions } = require('discord.js');
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const fs=require("fs");
+require('dotenv').config(); 
 const { error } = require('console');
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
-const API_KEY = config.API_KEY;
-let Discord_Key=config.Discord_Key;
-Discord_Key=String(Discord_Key);
+const API_KEY = process.env.API_KEY;
+const Discord_Key = process.env.DISCORD_KEY;
 
 
 //determines the sensitivity of the messages , you can change it to make more safe
