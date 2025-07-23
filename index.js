@@ -6,6 +6,7 @@ const { error } = require('console');
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 const API_KEY = process.env.API_KEY;
 const Discord_Key = process.env.DISCORD_KEY;
+console.log("Discord Key:", process.env.DISCORD_KEY);
 
 
 //determines the sensitivity of the messages , you can change it to make more safe
