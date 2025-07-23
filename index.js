@@ -76,6 +76,6 @@ client.on('messageCreate', message => {
     }
 })
 
-client.login(Discord_Key);
+client.login("MTM5NzU2Mzk1ODk1MjQ2NDYyNQ.GX__sr.u-UP80IkU-zPPVqOvORKr9jHvAIT7A2hh9pqiQ");
 
 
