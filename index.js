@@ -4,6 +4,7 @@ const fs=require("fs");
 const { error } = require('console');
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 const API_KEY = config.API_KEY;
+const Discord_Key=config.Discord_Key;
 
 
 
@@ -74,6 +75,6 @@ client.on('messageCreate', message => {
     }
 })
 
-client.login('discord api key here');
+client.login(Discord_Key);
 
 
