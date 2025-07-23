@@ -4,8 +4,8 @@ const fs=require("fs");
 const { error } = require('console');
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 const API_KEY = config.API_KEY;
-const Discord_Key=config.Discord_Key;
-
+let Discord_Key=config.Discord_Key;
+Discord_Key=String(Discord_Key);
 
 
 //determines the sensitivity of the messages , you can change it to make more safe
